@@ -1,0 +1,375 @@
+<html>
+    <head>
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 100vh;
+                width: 100vw;
+            }
+            .landing-section{
+                background-color: #49BBBD;
+                border-bottom-left-radius: 120px;
+                border-bottom-right-radius: 120px;
+                /* height: 100vh;
+                width: 100vw;  */
+            } 
+            .nav-bar{
+                padding: 1.5rem 4rem;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+            } 
+            .navbar{
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+            }
+            .nav{
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+                gap: 1.2rem;
+                list-style: none;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a{
+                color: #FFFFFF;
+                font-size:  1.8rem;
+            }
+            .nav-btn{
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+                gap:1.2rem;
+            }
+            #login{
+                background-color:#FFFFFF ;
+                color: #5B5B5B;
+                border-radius: 3rem;
+                font-size: 1.5rem;
+                align-self: center;
+                padding: 1.2rem;
+                border: #FFFFFF;
+            }
+            #signup{
+                background-color:#FFFFFF4D;
+                color: #FFFFFF;
+                border-radius: 3rem;
+                font-size: 1.5rem;
+                align-self: center;
+                padding: 1.2rem;
+                border: #FFFFFF4D;
+            }
+
+
+            .main-area{
+                /* border: 2px solid black; */
+                display: flex;
+                width: 100%;
+                height: 80%;
+            }
+            .desc{
+                /* border: 2px solid black; */
+                margin-left: 5rem;
+                margin-top: 8rem;
+            }
+            .box{
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+            .girl-img{
+                margin-top: 2rem;
+                margin-left: 20rem;
+                
+            }
+            .head-1{
+                color: white;
+                font-size: 3.2rem;
+            }
+            span{
+                color: orange;
+            }
+            .para{
+                color: #FFFFFF;
+                font-size: 1.7rem;
+            }
+            #join-btn{
+                background-color:#FFFFFF4D;
+                color: #FFFFFF;
+                border-radius: 3rem;
+                font-size: 1.2rem;
+                align-self: center;
+                padding: 1.2rem;
+                border: #FFFFFF4D;
+            } 
+            .play-btn{
+                height: 6.5rem;
+                width: 7.5rem;
+            }
+            .container{
+                margin-top: 10rem;
+                width: 100%;
+                display: flex;
+                gap: 3rem;
+                justify-content: center;
+            }
+            .boxes{
+                text-align: center;
+            }
+            #heading1{
+                font-family: Buenos Aires Trial;
+                font-size: 4rem;
+                color: #136CB5;
+            }
+            .para-section{
+                color:#010514CC;
+                font-size: 1.5rem;
+            }
+
+
+            /* main-section */
+            .main-section{
+                margin-top: 10rem;
+                /* height: 80vh; */
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .head1{
+                text-align: center
+                font-size: 2rem;
+                color:#2F327D;
+            }
+            .description{
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 1.5rem;
+                color:#696984;
+            }
+            .main-container{
+                /* height: 55%;
+                width: 70%; */
+                margin: 6rem 12rem 4rem 12rem;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3.5rem;
+            }
+            .contain{
+                background-color: #FFFFFF;
+                /* height:100%;
+                width:30%;  */
+                /* border: 2px solid black; */
+                border-radius: 2rem;
+                box-shadow: #262D7614 0px 10px 60px 0px;
+                align-items: center;
+                padding: 2.3rem;
+                position:relative;
+            }
+            .round-img{
+                position: absolute;
+                left:5rem;
+                top:-4rem;
+
+            }
+            .head-3{
+                margin-top: 4rem;
+                text-align: center;
+                font-size: 1.6rem;
+                color:#2F327D;
+
+            }
+            .paragraph{
+                margin-top: 2rem;
+                text-align: center;
+                font-size: 1.1rem;
+                color:#696984;
+            }
+
+            /* footer-section */
+            .footer-section{
+                border: 2px solid black;
+                background-color : rgba(37, 38, 65, 1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+            }
+            .logo-img{
+                /* border: 2px solid black; */
+                display: flex;
+                margin-bottom: 2rem;
+                align-items: center
+            }
+            .info{
+                /* border: 2px solid black; */
+                display: flex;
+                gap: 1rem;
+            }
+            .options{
+                margin-top: 2rem;
+                /* border: 2px solid black; */
+                display: flex;
+            }
+            .heading4{
+                font-size: 1.4rem;
+                color: #FFFFFF ;
+                border-left: 1px solid #626381;
+                padding-left: 1rem;
+            }
+            .heading3{
+                margin-top: 1rem;
+                font-size: 1.6rem;
+                color:#B2B3CF;
+            }
+            .sub{
+                padding: 10px 1rem;
+                font-size: 1.2rem ;
+                color: #FFFFFF;
+                border-radius:2rem;
+                border: #49BBBD;
+                background-color: #49BBBD ;
+            }
+            .head-4{
+                margin-top: 2rem;
+                font-size: 1.2rem ;
+                color:#B2B3CF ;
+                padding: 0 10px;
+                
+            }
+            .footer{
+                font-size: 1.2rem;
+                color: #B2B3CF;
+                margin-bottom: 1rem;
+            }
+            input[type="email"] {
+                padding: 12px;
+                font-size: 1.2rem;
+                border-radius: 2rem;
+                border: 1px solid #83839A;
+                color:#83839A;
+                background-color : rgba(37, 38, 65, 1);
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- landing-section -->
+        <div class="landing-section">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src=".\Group 112.png" alt="logo">
+                </div>
+                <div class="navbar">
+                    <ul class="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                    <div class="nav-btn">
+                        <button id="login">Login</button>
+                        <button id="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-area">
+                <div class="desc">
+                    <h1 class="head-1"><span>Studying</span> Online is now <br>much easier</h1><br>
+                    <p class="para">TOTC is an interesting platform that will teach <br>you in more an interactive way</p>
+                    <div class="box">
+                        <button id="join-btn">Join for free</button>
+                        <img class="play-btn" src=".\Group 4(1).png" alt="">
+                        <h4 style=font-size:1.5rem;>Watch how it works</h4>
+                    </div>
+                </div>
+                <img class="girl-img"src=".\lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png" alt="" >
+            </div>
+        </div> 
+
+        <!-- container -->
+        <div class="container">
+            <div class="boxes">
+                <h1 id="heading1">15K+</h1>
+                <p class="para-section">Students</p>
+            </div>
+            <div class="boxes">
+                <h1 id="heading1">75%</h1>
+                <p class="para-section">Total success</p>
+            </div>
+            <div class="boxes">
+                <h1 id="heading1">35</h1>
+                <p class="para-section">Main questions</p>
+            </div>
+            <div class="boxes">
+                <h1 id="heading1">26</h1>
+                <p class="para-section">Chief expects</p>
+            </div>
+            <div class="boxes">
+                <h1 id="heading1">16</h1>
+                <p class="para-section">Years of experience</p>
+            </div>
+        </div>
+
+        <!-- main-section -->
+        <div class="main-section">
+            <h1 class="head1">All-In-One <span style="color: #00CBB8;">Cloud Software</span></h1>
+            <p class="description">TOTC is one powerful online software suite that combines all the tools needed <br>to run a successful school or office.
+            </p>
+            <div class="main-container">
+            <div class="contain">
+                <img class="round-img" src=".\Group 79.png" alt="">
+                <h3 class="head-3">Online Billing, <br>Invoicing, & Contracts
+                </h3>
+                <p class="paragraph">Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts</p>
+            </div>
+            <div class="contain">
+                <img class="round-img" src=".\Group 80.png" alt="">
+                <h3 class="head-3">Easy Scheduling & <br>Attendance Tracking</h3>
+                <p class="paragraph">Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance</p>
+            </div>
+            <div class="contain">
+                <img class="round-img" src=".\Group 81.png" alt="">
+                <h3 class="head-3"><br>Customer Tracking</h3>
+                <p class="paragraph">Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization </p>
+            </div>
+        </div>
+        </div>
+        
+
+        <!-- footer-section -->
+        <div  class="footer-section">
+            <div class="logo-img">
+                <img src=".\Group 111.png" alt="" style="margin-right:2rem;">
+                <h4 class="heading4">Virtual Class <br>for Zoom</h4>
+            </div>
+            <h3 class="heading3">Subscribe to get our Newsletter</h3><br>
+            <div class="info">
+                <input type="email" placeholder="Your Email">
+                <button class="sub">Subscribe</button>
+           </div>
+            <div class="options">
+                <h4 style="border-right: 1px solid #626381 ;" class="head-4">Careers</h4>
+                <h4 style="border-right: 1px solid #626381 ;" class="head-4">Privacy Policy</h4>
+                <h4 class="head-4">Terms & Conditions</h4>
+            </div><br>
+            <p class="footer">© 2021 Class Technologies Inc. </p>
+        </div>
+    </body>
+</html>

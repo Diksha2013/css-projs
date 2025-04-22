@@ -1,0 +1,415 @@
+<html>
+    <head>
+        <style>
+             *{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 100vh;
+                width: 100vw;
+            }
+
+            /* header-section */
+            .nav-bar{
+                padding: 1.5rem 4rem;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+            } 
+            .navbar{
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1.2rem;
+
+            }
+            .nav{
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: space-between;
+                gap: 1.5rem;
+                list-style: none;
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a{
+                color: #5B5B5B;
+                font-size:  1.8rem;
+            }
+            .sub-nav{
+                /* border: 2px solid black;  */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap:1rem;
+            }
+            .head-6{
+                font-size: 1rem;
+            }
+            .lina{
+                background-color: #D9D9D9;
+                border-radius: 50%;
+            }
+
+            .header-area{
+                /* border: 2px solid black; */
+                box-sizing: border-box;
+                padding: 2rem 5rem;
+                background-color: #d2e5fa;
+            }
+            .header{
+                /* border: 2px solid black; */
+                display:flex;
+                margin-bottom: 2rem;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .header1{
+                font-size:2.3rem;
+                color:#252641;
+            }
+            .header4{
+                font-size:1rem;
+                color:#49BBBD;
+            }
+            .area{
+                /* border: 2px solid black; */
+                display:flex;
+                gap:2rem;
+            }
+            .area-box{
+                background-color: #FFFFFF;
+                padding:10px;
+                border-radius: 20px;
+                /* border: 2px solid black; */
+                
+            }
+            .photo{
+                width: 100%;
+            }
+            .header3{
+                margin-top: 10px;
+                color:#252641;
+                font-size: 1.3rem;
+            }
+            .section{
+                /* border: 2px solid black; */
+                display:flex;
+                align-items: center;
+                gap:8px;
+                margin-top: 10px;
+            }
+            .header5{
+                font-size:1rem;
+                color:#000000;
+            }
+            .grey{
+                margin-top: 10px;
+                background-color: #D9D9D9;
+                height: 5px;
+                width: 26rem;
+            }
+            .blue{
+                height: 5px;
+                width: 18rem ;
+                background-color: #49BBBD;
+            }
+            .line{
+                margin-top: 10px;
+                text-align: end;
+                font-size:;
+                color:#00000080;
+            }
+            .arrows{
+                margin-top: 2rem;
+                display: flex;
+                justify-content: end;
+                gap: 20px;
+            }
+
+
+
+        .main-title{
+            font-size:2.3rem;
+            color:#252641;
+            margin-left:5rem;
+            margin-top: 2.5rem;
+        }
+        .main-wrapper{
+            /* border: 2px solid black; */
+            display:flex;
+            flex-direction:column;
+            margin: 5rem;
+            gap: 2.5rem;
+        }
+        .wrapper{
+            /* border: 2px solid black; */
+            display:flex;
+            gap: 2.5rem;
+        }
+        .info-card{
+            /* border: 2px solid black; */
+            padding:1.7rem;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: #2F327D1A 0px 18.83px 47.08px 0px;
+        }
+        .pic{
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+        .sub-title{
+            font-size:1.7rem;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+        .text-block{
+            font-size:1.2rem;
+            color:#696984;
+        }
+        .layout-block{
+          background-color: #252641;
+          margin:3rem 4rem 6rem 4rem ;
+          border-radius: 2rem;
+          text-align: center;
+          padding: 2.5rem 8rem;
+        }
+        .section-title{
+            font-size:2.3rem;
+            color:#FFFFFF;
+            margin-bottom: 2rem;
+        }
+        .section-info{
+            font-size:1.3rem;
+            color:#FFFFFF; 
+            margin-bottom: 3rem;
+        }
+        .section-btn{
+            font-size:1.1rem;
+            border-radius:1rem ;
+            color:#FFFFFF;
+            background-color: #49BBBD;
+            padding:1.5rem;
+        }
+
+
+        /* footer-section */
+        .footer-section{
+                border: 2px solid black;
+                background-color : rgba(37, 38, 65, 1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+            }
+            .logo-img{
+                /* border: 2px solid black; */
+                display: flex;
+                margin-bottom: 2rem;
+                align-items: center
+            }
+            .info{
+                /* border: 2px solid black; */
+                display: flex;
+                gap: 1rem;
+            }
+            .options{
+                margin-top: 2rem;
+                /* border: 2px solid black; */
+                display: flex;
+            }
+            .heading4{
+                font-size: 1.4rem;
+                color: #FFFFFF ;
+                border-left: 1px solid #626381;
+                padding-left: 1rem;
+            }
+            .heading3{
+                margin-top: 1rem;
+                font-size: 1.6rem;
+                color:#B2B3CF;
+            }
+            .sub{
+                padding: 10px 1rem;
+                font-size: 1.2rem ;
+                color: #FFFFFF;
+                border-radius:2rem;
+                border: #49BBBD;
+                background-color: #49BBBD ;
+            }
+            .head-4{
+                margin-top: 2rem;
+                font-size: 1.2rem ;
+                color:#B2B3CF ;
+                padding: 0 10px;
+                
+            }
+            .footer{
+                font-size: 1.2rem;
+                color: #B2B3CF;
+                margin-bottom: 1rem;
+            }
+            input[type="email"] {
+                padding: 12px;
+                font-size: 1.2rem;
+                border-radius: 2rem;
+                border: 1px solid #83839A;
+                color:#83839A;
+                background-color : rgba(37, 38, 65, 1);
+            }
+        </style>
+    </head>
+    <body>
+         <!-- header-section -->
+         <div class="header-section">
+            <div class="nav-bar">
+            <div class="logo">
+            <img src=".\Group 235.png" alt=""></div>
+            <div class="navbar">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div class="sub-nav">
+                    <img class="lina" src=".\image 12.png" alt="">
+                    <h6 class="head-6">Lina</h6>
+                    <img src=".\.png" alt="" height="10px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="header-area">
+            <div class="header">
+            <h1 class="header1">Welcome back, ready for your next lesson?</h1>
+            <h4 class="header4">View history</h4>
+            </div>
+            <div class="area">
+                <div class="area-box">
+                    <img class="photo" src=".\Rectangle 32.png" alt="" >
+                    <h3 class="header3">AWS Certified Solutions Architect</h3>
+                    <div class="section">
+                        <img src=".\image 12.png" alt="lina">
+                        <h5 class="header5">Lina</h5>
+                    </div>
+                    <div class="grey">
+                        <div class="blue"></div>
+                    </div>
+                    <p class="line">Lesson 5 of 7</p>
+                </div>
+                <div class="area-box">
+                    <img class="photo" src=".\Rectangle 32 (1).png" alt="" >
+                    <h3 class="header3">AWS Certified Solutions Architect</h3>
+                    <div class="section">
+                        <img src=".\image 12.png" alt="lina" class="lina">
+                        <h5 class="header5">Lina</h5>
+                    </div>
+                    <div class="grey">
+                        <div class="blue"></div>
+                    </div>
+                    <p class="line">Lesson 5 of 7</p>
+                </div>
+                <div class="area-box">
+                    <img class="photo" src=".\Group 40.png" alt="">
+                    <h3 class="header3">AWS Certified Solutions Architect</h3>
+                    <div class="section">
+                        <img src=".\image 12.png" alt="lina" class="lina">
+                        <h5 class="header5">Lina</h5>
+                    </div>
+                    <div class="grey">
+                        <div class="blue"></div>
+                    </div>
+                    <p class="line">Lesson 5 of 7</p>
+                </div>
+            </div>
+            <div class="arrows">
+                <img src=".\.png" alt="" style="background-color: #49BBBD80; padding: 15px;">
+             <img src=".\.png" alt="" style="background-color: #49BBBD; padding: 15px;">
+            </div>
+        </div>
+    
+
+
+
+    <h1 class="main-title">Choice favourite course from top category</h1>
+    <div class="main-wrapper">
+    <div class="wrapper">
+        <div class="info-card">
+            <img class="pic" src=".\ (1).png" alt="" style="background-color: #49BBBD4D";>
+            <h2 class="sub-title">Design</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color:#5B72EE4D";>
+            <h2 class="sub-title">Development</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore. </p>
+        </div>
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color: #9DCCFF4D";>
+            <h2 class="sub-title">Development</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color:#00CBB84D";>
+            <h2 class="sub-title">Business</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+    </div>
+    <div  class="wrapper">
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color: #F48C064D";>
+            <h2 class="sub-title">Marketing</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color: #EE645B4D";>
+            <h2 class="sub-title">Photography</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color: #2526414D";>
+            <h2 class="sub-title">Acting</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+        <div class="info-card">
+            <img class="pic" src=".\.png" alt="" style="background-color: #00CBB84D";>
+            <h2 class="sub-title">Business</h2>
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolores culpa! Eaque ducimus dignissimos adipisci voluptatum inventore.</p>
+        </div>
+    </div>
+    </div>
+    <div class="layout-block">
+        <h1 class="section-title">Online coaching lessons for remote learning</h1>
+        <p class="section-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <button class="section-btn">start learning now</button>
+    </div>
+
+
+    <!-- footer-section -->
+    <div  class="footer-section">
+        <div class="logo-img">
+            <img src=".\Group 111.png" alt="" style="margin-right:2rem;">
+            <h4 class="heading4">Virtual Class <br>for Zoom</h4>
+        </div>
+        <h3 class="heading3">Subscribe to get our Newsletter</h3><br>
+        <div class="info">
+            <input type="email" placeholder="Your Email">
+            <button class="sub">Subscribe</button>
+       </div>
+        <div class="options">
+            <h4 style="border-right: 1px solid #626381 ;" class="head-4">Careers</h4>
+            <h4 style="border-right: 1px solid #626381 ;" class="head-4">Privacy Policy</h4>
+            <h4 class="head-4">Terms & Conditions</h4>
+        </div><br>
+        <p class="footer">© 2021 Class Technologies Inc. </p>
+    </div>
+    </body>
+</html>
+
